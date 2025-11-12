@@ -18,6 +18,19 @@ Tested in the following environment:
 
 ## Building
 
+### Quick Notes for how to build on Debian 13
+
+- Demo: [Youtube](https://youtu.be/eNZd_Bqya9E?si=FHU_LyqB1wUe2r-F)
+- Install dependencies
+- `cd gr-ais_simulator && mkdir build`
+- `cd build && cmake` && `make -j4`
+- `sudo checkinstall --fstrans=no`
+- Chose `2` to change the package name to `gr-ais-simulator` and select all other default options
+- `cd ../../` to top directory of the repo
+- Power up HackRF One to the USB port, `DO NOT FORGET` to connect antenna or Attenuator to protect the output
+- `python3 -u ais-simulator.py`
+- Open the web page on `webapp/ais-simulator.html`
+
 ### Dependencies
 
 You need to install the following build dependencies first:
